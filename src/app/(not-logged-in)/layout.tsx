@@ -1,10 +1,6 @@
-import TopBar from "./navgation/top-bar";
+import TopBar from "@/components/navigation/top-bar";
 
-const Layout = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
+const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <div>
       <TopBar />

@@ -2,7 +2,7 @@ import { ButtonHTMLAttributes } from "react";
 import { cva, VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
-const buttonVariant = cva("px-8 py=3 rounded-lg ", {
+const buttonVariant = cva("px-5 py-2 rounded-lg ", {
   variants: {
     variant: {
       primary: "bg-blue-600 text-white  hover:bg-blue-700 text-lg",
@@ -30,13 +30,14 @@ const Button = ({
   disabled,
   size,
   variant,
+  className,
   ...props
 }: IButtonProps) => {
   return (
     <button
       onClick={onClick}
       disabled={disabled}
-      className={cn(buttonVariant({ size, variant }))}
+      className={cn(buttonVariant({ size, variant }), className)}
       {...props}
     />
   );
