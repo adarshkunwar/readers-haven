@@ -1,36 +1,10 @@
 import React from "react";
-import { Search, BookOpen, BookmarkPlus, TrendingUp } from "lucide-react";
+import { Search, BookmarkPlus, TrendingUp } from "lucide-react";
 
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center">
-              <BookOpen className="h-8 w-8 text-blue-600" />
-              <span className="ml-2 text-xl font-bold text-gray-900">
-                Reader&apos;s haven
-              </span>
-            </div>
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                Browse
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                Categories
-              </a>
-              <a href="#" className="text-gray-600 hover:text-gray-900">
-                My Library
-              </a>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-                Sign In
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
 
       {/* Hero Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
