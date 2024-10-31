@@ -7,9 +7,9 @@ type Ttabs = {
 
 const Tabs = () => {
   const tabs: Ttabs[] = [
-    { name: "Browse", link: "#" },
-    { name: "Categories", link: "#" },
-    { name: "My Library", link: "#" },
+    { name: "Browse", link: "/browse" },
+    { name: "Categories", link: "/category" },
+    { name: "My Library", link: "/library" },
   ];
   return (
     <>

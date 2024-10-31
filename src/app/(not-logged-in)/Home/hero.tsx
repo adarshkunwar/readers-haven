@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <div className="max-w-7xl pt-10 mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="lg:flex mt-14 lg:items-center lg:justify-between">
+    <div className="max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="lg:flex lg:items-center lg:justify-between">
         <div className="lg:w-1/2">
           <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl md:text-6xl">
             Discover Your Next

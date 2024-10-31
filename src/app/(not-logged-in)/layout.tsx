@@ -4,7 +4,7 @@ const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
     <div>
       <TopBar />
-      {children}
+      <div className="mt-4">{children}</div>
     </div>
   );
 };
