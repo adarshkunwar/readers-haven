@@ -9,8 +9,10 @@ const LoginPage = () => {
   const [name, setName] = useState("");
 
   const login = async (email: string, password: string) => {
-    const session = await account.createEmailPasswordSession(email, password);
-    setLoggedInUser(await account.get());
+    await account.deleteSession("current");
+    await account.createEmailPasswordSession(email, password);
+    const user = await account.get();
+    console.log(user, "user");
   };
 
   const register = async () => {
